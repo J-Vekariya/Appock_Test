@@ -15,7 +15,13 @@ $royal:                           #886aea !default;
 $dark:                            #444 !default;
 */
 
-$royal:                           #af2333 !default;
+$royal:                           #af2333;
+$firstdark:					      #941d2a;
+$seconddark:					  #00594d;
+$thirddark:         		 	  #293940;
+$firstScreen:					  #ba303d;
+$secondScreen:					  #00aa93;
+$thirdScreen:					  #3b6064;
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
@@ -23,3 +29,66 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
 
+.sidemenu-item{
+	padding: 0px;
+}
+.sidemenu-sub-item{
+	border:none;
+}
+.first{
+	background-color: $firstScreen;
+	height:100%;
+}
+.second{
+	background-color: $secondScreen;
+	height:100%;
+}
+.third{
+	background-color: $thirdScreen;
+	height:100%;
+}
+.firstDark{
+	background-color: $firstdark;
+	border-color: $firstdark;
+	box-shadow:none;
+}
+.secondDark{
+	background-color: $seconddark;
+	border-color: $seconddark;
+	box-shadow:none;
+}
+.thirdDark{
+	background-color: $thirddark;
+	border-color: $thirddark;
+	box-shadow:none;
+}
+.swiper-pagination{
+	bottom:20% !important;
+}
+.slideButton{
+	position:absolute;
+	color: white;
+	top: 85%;
+    left: 15%;
+    width: 70%;
+    height: 7%;
+    border-radius: 20px;
+    border:none;
+    font-size: 20px;
+    display:inline;
+}
+.slideButton-secondary{
+	position:absolute;
+	color: white;
+	top: 75%;
+    margin-left: 15%;
+    width: 35%;
+    height: 7%;
+    border-radius: 20px;
+    border:none;
+    font-size: 20px;
+    display:inline;
+}
+.slideButton i{
+	margin-right: -15%;
+}

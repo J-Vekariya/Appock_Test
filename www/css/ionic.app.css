@@ -9814,3 +9814,66 @@ a.button {
   opacity: 0;
   -webkit-transition-duration: 0s;
   transition-duration: 0s; }
+
+.sidemenu-item {
+  padding: 0px; }
+
+.sidemenu-sub-item {
+  border: none; }
+
+.first {
+  background-color: #ba303d;
+  height: 100%; }
+
+.second {
+  background-color: #00aa93;
+  height: 100%; }
+
+.third {
+  background-color: #3b6064;
+  height: 100%; }
+
+.firstDark {
+  background-color: #941d2a;
+  border-color: #941d2a;
+  box-shadow: none; }
+
+.secondDark {
+  background-color: #00594d;
+  border-color: #00594d;
+  box-shadow: none; }
+
+.thirdDark {
+  background-color: #293940;
+  border-color: #293940;
+  box-shadow: none; }
+
+.swiper-pagination {
+  bottom: 20% !important; }
+
+.slideButton {
+  position: absolute;
+  color: white;
+  top: 85%;
+  left: 15%;
+  width: 70%;
+  height: 7%;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  display: inline; }
+
+.slideButton-secondary {
+  position: absolute;
+  color: white;
+  top: 75%;
+  margin-left: 15%;
+  width: 35%;
+  height: 7%;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  display: inline; }
+
+.slideButton i {
+  margin-right: -15%; }
