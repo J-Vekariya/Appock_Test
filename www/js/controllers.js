@@ -3,8 +3,20 @@ angular.module('starter.controllers', [])
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
 
 })
+.controller('BusinessCtrl', function($scope, $ionicModal, $timeout) {
+	$scope.business = [
+	{
+		'image':'../img/1.jpg'
+	},
+	{
+		'image':'../img/2.jpg'
+	},
+	{
+		'image':'../img/3.jpg'
+	}];
+})
 
-.controller('BoardingCtrl', function($scope, $ionicModal, $timeout) {
+.controller('BoardingCtrl', function($scope, $ionicModal, $timeout, $state) {
 
 	$scope.options = {
 		  loop: false,
@@ -36,5 +48,9 @@ $scope.$on("$ionicSlides.slideChangeEnd", function(event, data){
   	var ele = document.getElementsByClassName("swiper-pagination");
   	ele[0].style.setProperty("bottom", "20%", "important");
   }
+
+   $scope.skipIntro = function(){
+   	$state.go('app.business');
+   }
 });
 })

@@ -28,7 +28,12 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
-
+i{
+	font-size: 50px;
+    right: 10px;
+    position: absolute;
+    bottom: 5px;
+}
 .sidemenu-item{
 	padding: 0px;
 }
