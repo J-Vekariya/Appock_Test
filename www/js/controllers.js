@@ -6,13 +6,13 @@ angular.module('starter.controllers', [])
 .controller('BusinessCtrl', function($scope, $ionicModal, $timeout) {
 	$scope.business = [
 	{
-		'image':'../img/1.jpg'
+		'image':'img/1.jpg'
 	},
 	{
-		'image':'../img/2.jpg'
+		'image':'img/2.jpg'
 	},
 	{
-		'image':'../img/3.jpg'
+		'image':'img/3.jpg'
 	}];
 })
 
