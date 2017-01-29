@@ -17,9 +17,17 @@
       <ion-list class="sidemenu-item side-menu">
         
         <ion-item class="menu-item-1">
-          <div>
+          <div ng-show="!isLoggedIn">
             <button class="button button-dark">Login</button>
             <button class="button button-dark">Inscreva-se</button>
+          </div>
+          <div ng-show="isLoggedIn" class="isLoggedIn">
+            <div class="user">
+              <img src="../img/user.jpg" />
+              <div>
+              <span>Ola, Alexandre</span><br><span>Seja bem-vindo!</span>
+            </div>
+            </div>
           </div>
         </ion-item>
        

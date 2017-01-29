@@ -1,7 +1,7 @@
 angular.module('starter.controllers', [])
 
 .controller('AppCtrl', function($scope, $ionicModal, $timeout) {
-
+    $scope.isLoggedIn = true;
 })
 .controller('BusinessCtrl', function($scope, $ionicModal, $timeout) {
 	$scope.business = [
@@ -42,7 +42,7 @@ $scope.$on("$ionicSlides.slideChangeEnd", function(event, data){
   console.log("End");
   if($scope.activeIndex == 2){
   	var ele = document.getElementsByClassName("swiper-pagination");
-  	ele[0].style.setProperty("bottom", "30%", "important");
+  	ele[0].style.setProperty("bottom", "27%", "important");
   }
   else{
   	var ele = document.getElementsByClassName("swiper-pagination");

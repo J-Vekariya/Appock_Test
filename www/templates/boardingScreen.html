@@ -1,24 +1,36 @@
 <ion-content scroll="false">
-  <ion-slides  options="options" slider="data.slider">
+  <ion-slides  options="options" slider="data.slider" class="slides">
     
     <ion-slide-page class="first">
-
+        <div>
+            <img src="../img/Capture.jpg"
+                 />
+            <span class="slide-text">O guis do mercade artistico nacional agora no seu celular</span>
+        </div>
         <button class="slideButton firstDark" ng-click="skipIntro()">
           Ir para o aplicativo <i class="flaticon-arrows"></i>
         </button>
     </ion-slide-page>
     
     <ion-slide-page class="second">
+        <div>
+            <img src="../img/Capture1.jpg" />
+            <span class="slide-text">Consulte a ultima edicao fisica do Guia Show Business</span>
+        </div>
         <button class="slideButton secondDark" ng-click="skipIntro()">
           Ir para o aplicativo <i class="flaticon-arrows"></i>
         </button>
     </ion-slide-page>
     
     <ion-slide-page class="third">
-        <button class="slideButton-secondary thirdDark">
+        <div>
+            <img src="../img/Capture2.jpg" />
+            <span class="slide-text">Increva-se no aplicativo e crie <b>gratuitamente</b> uma agenda com seus contatos favoritos</span>
+        </div>
+        <button class="slideButton-secondary  thirdDark">
           <span>Login</span> 
         </button>
-        <button class="slideButton-secondary thirdDark">
+        <button class="slideButton-secondary signup thirdDark">
           <span>Inscreva-se</span> 
         </button>
         <button class="slideButton thirdDark" ng-click="skipIntro()">
