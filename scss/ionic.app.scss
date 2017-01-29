@@ -28,17 +28,57 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 
 // Include all of Ionic
 @import "www/lib/ionic/scss/ionic";
-i{
+.sidemenu-item i{
 	font-size: 50px;
     right: 10px;
     position: absolute;
     bottom: 5px;
 }
+.side-menu .list{
+    height: 100%;
+}
 .sidemenu-item{
 	padding: 0px;
+    border: none;
+}
+.side-menu .item{
+    background-color: $firstScreen;
+    color: white;
+    font-size: 16px;
+    vertical-align: top;
+}
+.side-menu .item i{
+    position: initial;
+}
+.side-menu .item i:before{
+    font-size: 25px !important;
+    margin-left: 10px;
 }
 .sidemenu-sub-item{
 	border:none;
+}
+.menu-item-1{
+  height: 30%;
+  background-color: #a62c38 !important;
+  border: none;
+}
+.menu-item-1 div{
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    left: 10%;
+}
+.menu-item-1 button{
+    width: 40%;
+    border-radius: 25px;
+    background-color: $firstdark !important;
+    font-size: 18px;
+}
+.menu-item-3{
+    padding: 0px;
+}
+.menu-item-4{
+    padding: 0px;
 }
 .first{
 	background-color: $firstScreen;
@@ -96,4 +136,18 @@ i{
 }
 .business img{
     width: 100%;
+}
+.floating-button-text{
+    background-color: transparent !important;
+    color: white !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+.floating-menu{
+    font-size: 25px !important;
+}
+[class^="flaticon-"]:before, [class*=" flaticon-"]:before,
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
+    margin-left: 0px !important;
+    font-size: 25px !important;
 }

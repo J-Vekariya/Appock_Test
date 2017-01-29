@@ -2,6 +2,14 @@
 	<ion-nav-buttons side="right">
         <i class="flaticon-search"></i>
     </ion-nav-buttons>
+    <ion-floating-button click="myEvent()" has-footer="false" button-color="#2AC9AA" icon="ion-plus" icon-color="#fff">
+</ion-floating-button>
+    <ion-floating-menu menu-color="#af2333" menu-open-color="#af2333" menu-icon="flaticon-interface" menu-open-icon="flaticon-close" backdrop="true">
+        <ion-floating-item icon="flaticon-social" click="myEvent()" text="Adicione um artista" button-color="#af2333" text-class="floating-button-text" button-class="floating-menu"></ion-floating-item>
+        <ion-floating-item icon="flaticon-music" click="myEvent()" text="Artistas" button-color="#af2333" text-class="floating-button-text"></ion-floating-item>
+        <ion-floating-item icon="flaticon-people" click="myEvent()" text="Produtores" button-color="#af2333" text-class="floating-button-text"></ion-floating-item>
+        <ion-floating-item icon="flaticon-favorite" click="myEvent()" text="Favoritos" button-color="#af2333" text-class="floating-button-text"></ion-floating-item>
+    </ion-floating-menu>
   <ion-content>
     <div ng-repeat="i in business" class="business">
     	<img ng-src="{{i.image}}" height="200" />
